@@ -1,0 +1,98 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "ValueChanged",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OpenZeppelin/box.sol": "Box"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"OpenZeppelin/Auth.sol": {
+			"keccak256": "0x1534328b234de8beac27dbc47ebc08261173f19d4bbaab95853781613c1c8f68",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://42d15c666fe5d8611c65786407995266d8baad2e1835182c1bb9e0468e78adc0",
+				"dweb:/ipfs/QmP2PTo3JBPvCAZj9xoXj2x5P99LnEvyQ54nEpfzPHQYm6"
+			]
+		},
+		"OpenZeppelin/box.sol": {
+			"keccak256": "0x7a87ebaae0437e70486ed7665719fd0a2a3915b13ed0856d76888529201f5087",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://784f7193e994edfeef963c60522d8ed94b8a54f6ad572a99d4a4767ac49ac3c4",
+				"dweb:/ipfs/QmYPcbiEcARJA1ZesgdYJPGN8o2Z9wYtdZ79s1SXYMHEnP"
+			]
+		}
+	},
+	"version": 1
+}
