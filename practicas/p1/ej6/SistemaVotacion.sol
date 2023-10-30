@@ -2,17 +2,17 @@
 pragma solidity ^0.8.0;
 
 contract SistemaVotacion {
-    // Estructura para representar un candidato
+    //Estructura para representar un candidato
     struct Candidato {
         uint id;
         string nombre;
         uint votos;
     }
 
-    // Almacena la lista de candidatos
+    //Almacena la lista de candidatos
     Candidato[] public candidatos;
 
-    // Mapeo de direcciones Ethereum a candidatos votados
+    //Mapeo de direcciones Ethereum a candidatos votados
     mapping(address => bool) public haVotado;
 
    
@@ -22,13 +22,11 @@ contract SistemaVotacion {
 
     
     function votar(uint _candidatoId) public {
-        // Verificar que el votante no haya votado antes
         require(haVotado[msg.sender]!=true);
 
-        // Verificar que el ID del candidato sea válido
+        
         require(_candidatoId >= 0 && _candidatoId < candidatos.length);
 
-        // Registrar el voto y marcar al votante como que ha votado
         candidatos[_candidatoId].votos++;
         haVotado[msg.sender] = true;
     }
